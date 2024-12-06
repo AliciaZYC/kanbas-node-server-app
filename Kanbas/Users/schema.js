@@ -3,10 +3,11 @@ const userSchema = new mongoose.Schema(
   {
     username: { type: String, required: true, unique: true },
     password: { type: String, required: true },
-    firstName: String,
+    firstName: { type: String },
     email: String,
     lastName: String,
     dob: Date,
+    createdDate: { type: Date, default: Date.now },
     role: {
       type: String,
       enum: ["STUDENT", "FACULTY", "ADMIN", "USER"],
