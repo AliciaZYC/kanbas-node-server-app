@@ -1,4 +1,4 @@
-import Database from "../Database/index.js";
+// import Database from "../Database/index.js";
 import model from "./model.js";
 export function findAssignmentsForCourse(courseId) {
   // const { assignments } = Database;
