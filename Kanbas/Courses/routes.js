@@ -63,7 +63,7 @@ export default function CourseRoutes(app) {
       // availableFrom: req.body.availableFrom || "2024-05-06T23:59",
       // availableUntil: req.body.availableUntil || "2024-05-20T23:59",
     };
-    const newAssignment = assignmentsDao.createAssignment(assignment);
+    const newAssignment = await assignmentsDao.createAssignment(assignment);
     res.send(newAssignment);
   });
 }
